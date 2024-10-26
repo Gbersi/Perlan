@@ -1,3 +1,13 @@
+import 'draw_card.dart';
+import 'card_namer.dart';
+import 'initial_deal.dart';
+
+void status(List<int> playerHand, List<int> houseHand) {
+  int playerScore = score(playerHand);
+  int houseScore = score(houseHand);
+  print("Your hand: ${playerHand.map(cardNamer).join(', ')} (Score: $playerScore)");
+  print("House hand: ${houseHand.length > 1 ? cardNamer(houseHand[0]) + ', ?' : houseHand.map(cardNamer).join(', ')}");
+}
 
 /*
 Create a function called CalculateScore that can calculate the score of a given hand of cards.

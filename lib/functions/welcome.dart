@@ -9,5 +9,6 @@ that has no input and simply prints a text.
 */
 
 void Welcome(){
-  
+  print("Velkomin í Svörtu Perluna þar sem draumarnir rætast");
+  print("Dragðu spil!");
 }
