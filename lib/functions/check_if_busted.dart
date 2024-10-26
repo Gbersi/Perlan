@@ -30,7 +30,7 @@ bool checkIfBusted(List<int> hand) {
 
 void main() {
 
-  List<int> playerHand = [10, 5, 7]; 
+  List<int> playerHand = [10, 5, 7];
   List<int> houseHand = [10, 5, 7, 2];
 
   bool isPlayerBusted = checkIfBusted(playerHand);
