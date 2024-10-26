@@ -1,4 +1,17 @@
-/*
+import 'draw_card.dart';
+import 'card_namer.dart';
+import 'initial_deal.dart';
+
+
+void returnHand(List<int> hand, List<int> deck) {
+  deck.addAll(hand);
+  hand.clear();
+}
+
+void returnHands(List<int> houseHand, List<int> playerHand, List<int> deck) {
+  returnHand(playerHand, deck);
+  returnHand(houseHand, deck);
+  /*
 Create a function that is capable of accepting two lists of integers,
 empty the content of one list to the end of the other list, call it ReturnHand.
 

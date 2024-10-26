@@ -7,9 +7,13 @@ the number 2 four times etc...
 
 Make this function return the List of integers.
  */
-
-List<int> DeckOfCards(){
-  return [] ;
+List<int> DeckOfCards() {
+  List<int> deck = [];
+  for (int i = 1; i <= 13; i++) {
+    deck.addAll([i, i, i, i]);
+  }
+  return deck;
 }
+
 
 
