@@ -16,7 +16,7 @@ import 'deck_of_cards.dart';
 import 'dart:math';
 
 int DealCard(List<int> deck){
-  final _random = new Random();
-  var deltcard = deck[_random.nextInt(deck.length)];
+  var deltcard = deck.first;
+  deck.remove(deltcard);
   return deltcard;
 }
