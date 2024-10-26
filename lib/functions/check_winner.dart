@@ -14,9 +14,30 @@ of the user, which should have decreased/increased based on if he won or not.
 
 
 import 'package:BlackJack/functions/functions.dart';
-import 'package:collection/collection.dart';
 
 
-int CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll, int currentBet){
-  return 0;
+
+Map<String, int> CheckWinner(List<int> playerHand, List<int> houseHand, int currentBankRoll, int currentBet){
+  int houseHandsum = houseHand.reduce((a, b) => a + b);
+  int playerHandsum  = playerHand.reduce((a, b) => a + b);
+  
+
+  //House wins 
+  if (houseHandsum > playerHandsum){
+    return {"House wins!": houseHandsum};
+  }
+  //Player wins
+  else if (playerHandsum > houseHandsum) {
+    currentBankRoll += currentBet;
+    currentBankRoll += currentBet;
+    return {"Player wins!!!": playerHandsum};
+  }
+  else {
+    currentBankRoll += currentBet;
+    return {
+      'houseHandsum': houseHandsum,
+      'playerHandsum': playerHandsum,
+      'currentBankRoll': currentBankRoll
+    };
+  }
 }
