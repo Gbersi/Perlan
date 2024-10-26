@@ -2,7 +2,7 @@ import 'dart:math';
 import 'score_function.dart';
 import 'draw_card.dart';
 import 'card_namer.dart';
-
+import 'deck_of_cards.dart';
 
 
 List<int> shuffledDeck() {
