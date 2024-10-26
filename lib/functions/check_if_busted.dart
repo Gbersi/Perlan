@@ -20,5 +20,6 @@ Example inputs
 
 
 bool CheckIfBusted(List<int> hand){
+  
   return true;
 }

@@ -5,8 +5,8 @@ import 'package:BlackJack/functions/deck_of_cards.dart';
 
 void main() {
 
-  DeckOfCards();
-  
+  List<int> DeckOfCards();
+  list shuffled = shuffle
   /*
   test('calculate', () {
     expect(calculate(), 42);
