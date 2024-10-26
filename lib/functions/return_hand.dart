@@ -12,7 +12,7 @@ void returnHand(List<int> hand, List<int> deck) {
 void returnHands(List<int> houseHand, List<int> playerHand, List<int> deck) {
   returnHand(playerHand, deck);
   returnHand(houseHand, deck);
-  /*
+  }/*
 Create a function that is capable of accepting two lists of integers,
 empty the content of one list to the end of the other list, call it ReturnHand.
 
@@ -25,10 +25,6 @@ print(hand); // Should print []
 
  */
 
-}
-void ReturnHand(List<int> hand, List<int> deck){
-
-}
 
 /*
 Then create another function called ReturnHands that uses the above function
