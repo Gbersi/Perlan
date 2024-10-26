@@ -2,13 +2,16 @@ import 'draw_card.dart';
 import 'card_namer.dart';
 import 'initial_deal.dart';
 import 'deck_of_cards.dart';
-import '';
 
 void status(List<int> playerHand, List<int> houseHand) {
   int playerScore = score(playerHand);
   int houseScore = score(houseHand);
   print("Your hand: ${playerHand.map(cardNamer).join(', ')} (Score: $playerScore)");
   print("House hand: ${houseHand.length > 1 ? cardNamer(houseHand[0]) + ', ?' : houseHand.map(cardNamer).join(', ')}");
+}
+int CalculateScore(List<int> hand){
+  return 0;
+
 }
 
 /*

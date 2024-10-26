@@ -12,7 +12,7 @@ print(deck); // Should print [2, 3, 4]
 
  */
 
-
+import 'deck_of_cards.dart';
 import 'dart:math';
 
 int DealCard(List<int> deck){

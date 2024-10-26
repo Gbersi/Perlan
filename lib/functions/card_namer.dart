@@ -1,3 +1,5 @@
+import 'deck_of_cards.dart';
+
 String cardNamer(int card) {
   switch (card) {
     case 1:
