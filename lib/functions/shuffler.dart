@@ -5,19 +5,9 @@ import 'card_namer.dart';
 import 'deck_of_cards.dart';
 
 
-List<int> shuffledDeck() {
-  List<int> deck = List.generate(52, (index) => (index % 13) + 1);
-  return shuffler(deck);
-}
-
-List<int> shuffler(List<int> list) {
-  List<int> shuffled = List.from(list);
-  shuffled.shuffle(Random());
-  return shuffled;
-}
-
-bool checkIfBusted(List<int> hand) {
-  return score(hand) > 21;
+List<int> shuffledDeck(deck) {
+  List<int> suffleddeck = deck.shuffle();
+  return suffleddeck;
 }
 /*
 Create a function called Shuffler which takes a List of integer as an input
