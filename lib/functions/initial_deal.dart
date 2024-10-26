@@ -1,5 +1,13 @@
 import 'draw_card.dart';
+import 'card_namer.dart';
 
+
+void initialDeal(List<int> playerHand, List<int> dealerHand, List<int> deck) {
+  for (int i = 0; i < 2; i++) {
+    DrawCard(playerHand, deck);
+    DrawCard(dealerHand, deck);
+  }
+}
 /*
 Create a function called InitialDeal. This function should accept THREE lists
 of integers as an input: playerHand, dealerHand, deck

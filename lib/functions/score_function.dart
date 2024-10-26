@@ -1,4 +1,11 @@
-
+import 'draw_card.dart';
+import '';
+void status(List<int> playerHand, List<int> houseHand) {
+  int playerScore = score(playerHand);
+  int houseScore = score(houseHand);
+  print("Your hand: ${playerHand.map(cardNamer).join(', ')} (Score: $playerScore)");
+  print("House hand: ${houseHand.length > 1 ? cardNamer(houseHand[0]) + ', ?' : houseHand.map(cardNamer).join(', ')}");
+}
 /*
 Create a function called CalculateScore that can calculate the score of a given hand of cards.
 The score is blackjack score, so the following rules apply
