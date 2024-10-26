@@ -25,5 +25,27 @@ that the function will simply ask the user again to input an answer?
  */
 
 int OptionSelect(String statement, List<String> options){
- return 0;
+  bool isRunning = true;
+
+  List<String> options = [
+    "Hit",
+    "Stay",
+    "Exit"
+  ];
+
+  while (isRunning) {
+    print("\n -- Main menu --");
+    
+    for (int i = 0; i < options.length; i++){
+      print("${i+1}. ${options[i]}");
+    }
+    int? input = int.tryParse(stdin.readLineSync()!);
+    if (input != null && input > 0 && input <= options.length) {
+      return input; 
+      }
+    else {
+      print("That option dose not exist");
+    }  
+  }
+
 }
