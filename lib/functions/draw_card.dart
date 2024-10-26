@@ -1,4 +1,6 @@
 import 'deal_card.dart';
+import 'deck_of_cards.dart';
+
 void DrawCard(List<int> hand, List<int> deck) {
   if (deck.isNotEmpty) {
     hand.add(deck.removeAt(0));
