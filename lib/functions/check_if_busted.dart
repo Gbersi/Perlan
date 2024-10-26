@@ -1,3 +1,6 @@
+import 'draw_card.dart';
+import 'initial_deal.dart';
+import 'deck_of_cards.dart';
 import 'score_function.dart';
 
 /*
@@ -18,8 +21,19 @@ Example inputs
 ...ie use output of score function and check if busted.
  */
 
+bool checkIfBusted(List<int> hand) {
+  int score = hand.reduce((a, b) => a + b);
+  CalculateScore(hand);
 
-bool CheckIfBusted(List<int> hand){
-  
-  return true;
+  return score > 21; // Returns true if busted, false otherwise
 }
+
+void main() {
+
+  List<int> playerHand = [10, 5, 7]; 
+  List<int> houseHand = [10, 5, 7, 2];
+
+  bool isPlayerBusted = checkIfBusted(playerHand);
+  bool isHouseBusted = checkIfBusted(houseHand);
+}
+
