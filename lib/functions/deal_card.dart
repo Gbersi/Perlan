@@ -13,6 +13,10 @@ print(deck); // Should print [2, 3, 4]
  */
 
 
+import 'dart:math';
+
 int DealCard(List<int> deck){
-  return 0;
+  final _random = new Random();
+  var deltcard = deck[_random.nextInt(deck.length)];
+  return deltcard;
 }
