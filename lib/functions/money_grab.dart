@@ -19,9 +19,9 @@ he doesn't input a integer?
  */
 
 int PlaceBet(int bankRoll){
-
+  return 1;
 }
 
 int BuyIn(){
-
+  return 1;
 }
